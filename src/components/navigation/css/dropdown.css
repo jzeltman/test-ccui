@@ -1,0 +1,27 @@
+@layer components {
+  .cmp-navigation--dropdown {
+    @apply relative grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto theme('spacing.6');
+
+    .cmp-button__icon { 
+      --button-text-size: var(--text-size); 
+      --button-text-color: var(--color-inverted); 
+    }
+
+    .cmp-navigation__group:not(.hidden) {
+      @apply absolute z-20 row-start-2 gap-0 py-2 m-0 text-opacity-50 list-none bg-white border border-opacity-50 divide-y-2 rounded shadow border-secondary bg-clip-padding text-secondary;
+    }
+
+    .cmp-navigation__group .cmp-navigation__item-link {
+      @apply flex px-3 py-2 text-secondary;
+      @apply hover:bg-light;
+      @apply focus:bg-light;
+    }
+
+    .cmp-navigation__group .cmp-navigation__item {
+      &:first-child { @apply border-t border-opacity-50 border-secondary; }
+      &:last-child { @apply border-b border-opacity-50 border-secondary; }
+    }
+  }
+}

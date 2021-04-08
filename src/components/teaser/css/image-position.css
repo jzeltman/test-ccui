@@ -1,0 +1,6 @@
+@layer components {
+  [class*=teaser--image-position] .cmp-teaser {
+    @apply flex;
+    flex-direction: var(--flex-direction);
+  }
+}

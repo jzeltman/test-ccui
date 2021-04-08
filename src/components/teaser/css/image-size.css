@@ -1,0 +1,18 @@
+@layer components {
+  [class*=teaser--image-size] {
+    .cmp-image { @apply flex w-full; }
+    .cmp-image__image { @apply object-cover; }
+  }
+  .teaser.teaser--image-size\:25 {
+    .cmp-teaser__content { flex-basis: 75%; }
+    .cmp-teaser__image { @apply flex; flex-basis: 25%; }
+  }
+  .teaser.teaser--image-size\:50 {
+    .cmp-teaser__content { flex-basis: 50%; }
+    .cmp-teaser__image { @apply flex; flex-basis: 50%; }
+  }
+  .teaser.teaser--image-size\:75 {
+    .cmp-teaser__content { flex-basis: 25%; }
+    .cmp-teaser__image { @apply flex; flex-basis: 75%; }
+  }
+}

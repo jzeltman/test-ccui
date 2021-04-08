@@ -1,0 +1,24 @@
+@layer base {
+  .navigation {
+    --navigation-flex-direction: var(--flex-direction);
+    --navigation-l0-flex-direction: var(--flex-direction);
+  }
+
+  .cmp-navigation {}
+  .cmp-navigation__group {
+    @apply z-20 flex;
+    gap: var(--gap);
+    flex-direction: var(--navigation-l0-flex-direction);
+
+    .cmp-navigation__group {
+      flex-direction: var(--navigation-flex-direction);
+    }
+  }
+  .cmp-navigation__item {}
+  .cmp-navigation__item--active {}
+  /* .cmp-navigation__item--level-0 {} */
+  .cmp-navigation__item-link { color: var(--color); }
+  .cmp-navigation__item-link:hover { color: var(--hover-color, var(--color)); }
+  .cmp-navigation__item-link:focus { color: var(--hover-color, var(--color)); }
+  /* .navigation--l0-color$ .cmp-navigation__item--level-0 > a; */
+}

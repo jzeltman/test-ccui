@@ -1,0 +1,58 @@
+@layer base {
+  [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
+    @apply px-3 py-2 text-base leading-normal border rounded-none outline-none appearance-none;
+    background-color: var(--background-color);
+    border-color: var(--color);
+    color: var(--color);
+  }
+
+  [multiple]:hover,[multiple]:focus,
+  [type=date]:hover,[type=date]:focus,
+  [type=datetime-local]:hover,[type=datetime-local]:focus,
+  [type=email]:hover,[type=email]:focus,
+  [type=month]:hover,[type=month]:focus,
+  [type=number]:hover,[type=number]:focus,
+  [type=password]:hover,[type=password]:focus,
+  [type=search]:hover,[type=search]:focus,
+  [type=tel]:hover,[type=tel]:focus,
+  [type=text]:hover,[type=text]:focus,
+  [type=time]:hover,[type=time]:focus,
+  [type=url]:hover,[type=url]:focus,
+  [type=week]:hover,[type=week]:focus,
+  select:hover,select:focus,
+  textarea:hover,textarea:focus {
+    background-color: var(--hover-background-color);
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+  }
+
+  .container:not(.form\:simple):not(.form\:underline):not(.form\:solid) {
+    .cmp-form-text {
+      label {
+        color: var(--color);
+      }
+    }
+    .cmp-form-text__help-block {}
+    .cmp-form-text__textarea,
+    .cmp-form-text__text {
+      @apply block w-full;
+      color: var(--color);
+    }
+  }
+  
+  [class*=form\:outline] .cmp-form-text__textarea,
+  [class*=form\:outline] .cmp-form-text__text {
+    background-color: var(--color);
+    color: var(--background-color);
+    border-color: var(--background-color);
+  }
+
+  [class*=form\:outline] .cmp-form-text__textarea:hover,
+  [class*=form\:outline] .cmp-form-text__text:hover,
+  [class*=form\:outline] .cmp-form-text__textarea:focus,
+  [class*=form\:outline] .cmp-form-text__text:focus {
+    background-color: var(--hover-color);
+    color: var(--hover-background-color);
+    border-color: var(--hover-background-color);
+  }
+}

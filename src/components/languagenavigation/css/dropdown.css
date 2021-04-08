@@ -1,0 +1,41 @@
+@layer components {
+  .languagenavigation.languagenavigation\:dropdown {
+    .cmp-languagenavigation { @apply relative; }
+
+    button {
+      @apply inline-flex row-start-1 px-3 py-1 bg-transparent border rounded;
+      border-color: var(--color-inverted);
+      color: var(--color-inverted);
+    }
+      
+    button:hover {
+      @apply underline;
+      border-color: var(--hover-color, var(--color));
+      color: var(--hover-color, var(--color));
+    }
+
+    .cmp-languagenavigation__group {
+      @apply absolute flex-col row-start-2 py-1 transform -translate-x-1/2 bg-white border divide-y rounded shadow border-light border-opacity-50 divide-light-hover justify-evenly ml-[50%] mt-2;
+    }
+
+    .cmp-languagenavigation__group[aria-expanded=true] { @apply flex; }
+    .cmp-languagenavigation__group[aria-expanded=false] { @apply hidden; }
+    
+    .cmp-languagenavigation__item:first-child {
+      @apply border-t border-light-hover;
+    }
+    
+    .cmp-languagenavigation__item:last-child {
+      @apply border-b border-light-hover;
+    }
+
+    .cmp-languagenavigation__item a { @apply flex px-4 py-2; }
+    .cmp-languagenavigation__item a:hover,
+    .cmp-languagenavigation__item a:focus{ background-color: var(--hover-background-color); }
+    
+    .cmp-languagenavigation__item--active a {
+      @apply font-bold;
+      background-color: var(--hover-background-color);
+    }
+  }
+}

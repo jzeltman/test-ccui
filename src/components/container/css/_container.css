@@ -1,0 +1,17 @@
+@layer base {
+  .container {
+    box-shadow: var(--box-shadow, none);
+  }
+
+  .cmp-container {
+    background-color: var(--background-color);
+    color: var(--color);
+    gap: var(--gap);
+    row-gap: var(--row-gap, var(--gap, 0));
+    column-gap: var(--column-gap, var(--gap, 0));
+    flex-direction: var(--flex-direction);
+    flex-grow: var(--flex-grow, 0);
+    flex-wrap: var(--flex-wrap, 0);
+    justify-content: var(--justify-content, 'flex-start');
+  }
+}

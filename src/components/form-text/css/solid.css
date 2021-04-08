@@ -1,0 +1,14 @@
+@layer components {
+  .container.form\:solid {
+    .cmp-form-text {
+      label {
+      }
+    }
+    .cmp-form-text__help-block {}
+    .cmp-form-text__textarea,
+    .cmp-form-text__text {
+      @apply block w-full border-transparent rounded-md;
+      @apply focus:border-secondary focus:bg-white focus:ring-0;
+    }
+  }
+}

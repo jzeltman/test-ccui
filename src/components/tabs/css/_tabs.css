@@ -1,0 +1,22 @@
+@layer base {
+  .cmp-tabs {}
+  .cmp-tabs__tablist {
+    @apply mb-4 border-b border-opacity-50;
+    border-color: var(--color);
+  }
+  .cmp-tabs__tab {
+    @apply border border-transparent rounded-none rounded-t outline-none;
+    color: var(--color);
+    @apply hover:underline;
+    @apply active:ring active:ring-primary active:ring-opacity-50;
+
+  }
+  .cmp-tabs__tab--active {
+    @apply mb-[-1px] border-opacity-50;
+    border-color: var(--color);
+    border-bottom-color: var(--background-color);
+  }
+
+  .cmp-tabs__tabpanel {}
+  .cmp-tabs__tabpanel--active {}
+}

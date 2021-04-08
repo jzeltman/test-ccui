@@ -1,0 +1,5 @@
+.cmp-form {
+  column-gap: var(--column-gap, var(--gap, 0));
+  row-gap: var(--row-gap, var(--gap, 0));
+  gap: var(--gap, var(--gap, 0));
+}

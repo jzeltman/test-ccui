@@ -1,0 +1,8 @@
+@layer components {
+  .download.download--action\:button:not(.download--action\:link) {
+    .cmp-download__action {
+      @apply inline-flex p-2 font-bold text-white transition-opacity rounded bg-opacity-90 bg-primary;
+      @apply hover:bg-opacity-100;
+    }
+  }
+}

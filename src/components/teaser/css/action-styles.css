@@ -1,0 +1,16 @@
+@layer components {
+  /* See main components/button/css/button.css for base styles */ 
+  /* See main components/button/css/outline.css for base styles */ 
+
+  [class*=teaser--action\:button-group],
+  [class*=teaser--action\:button-outline-group] {
+    .cmp-teaser__action-container { @apply flex gap-0; }
+    .cmp-teaser__action-link { 
+      @apply rounded-none ml-[-1px]; 
+
+      &:first-child { @apply ml-0 rounded-l; }
+      &:last-child { @apply rounded-r; }
+      &:first-child:last-child { @apply rounded; }
+    }
+  }
+}

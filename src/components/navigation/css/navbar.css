@@ -1,0 +1,22 @@
+@layer components {
+  .container\:navbar {
+    .cmp-navigation > .cmp-navigation__group {
+      @apply flex flex-col flex-wrap pl-0 mb-0 list-none gap-y-2 gap-x-0;
+    }
+
+    @screen md { 
+      .cmp-navigation > .cmp-navigation__group {
+        @apply flex-row gap-y-0 gap-x-2;
+      }
+    }
+
+    .cmp-navigation__item-link {
+      @apply block px-4 py-2 font-bold no-underline transition-colors duration-150;
+
+      .cmp-navigation__item-link:hover,
+      .cmp-navigation__item-link:focus {
+        @apply underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@layer base {
+  .cmp-separator {
+    padding-top: var(--padding-top, 0);
+    padding-bottom: var(--padding-bottom, 0);
+  }
+  .cmp-separator__horizontal-rule {
+    border-color: var(--background-color);
+  }
+}

@@ -1,0 +1,14 @@
+@layer components {
+  @tailwindloop teaser-rounded {
+    @themeSetting borderRadius;
+    @selector .teaser--rounded%% .cmp-teaser;
+  }
+  @tailwindloop teaser-rounded-image {
+    @themeSetting borderRadius;
+    @selector .teaser--rounded-image%% .cmp-image__image;
+  }
+  @tailwindloop teaser-rounded-content {
+    @themeSetting borderRadius;
+    @selector .teaser--rounded-content%% .cmp-teaser__content;
+  }
+}

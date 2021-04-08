@@ -1,0 +1,20 @@
+@layer components {
+  [class*=teaser--action\:button-outline] .cmp-teaser__action-link,
+  [class*=button\:outline] .cmp-form-button,
+  [class*=button\:outline] .cmp-button {
+    background-color: var(--color);
+    color: var(--background-color);
+    border-color: var(--background-color);
+  }
+
+  [class*=teaser--action\:button-outline] .cmp-teaser__action-link:hover,
+  [class*=button\:outline] .cmp-form-button:hover,
+  [class*=button\:outline] .cmp-button:hover,
+  [class*=teaser--action\:button-outline] .cmp-teaser__action-link:focus,
+  [class*=button\:outline] .cmp-form-button:focus,
+  [class*=button\:outline] .cmp-button:focus {
+    background-color: var(--hover-color);
+    color: var(--hover-background-color);
+    border-color: var(--hover-background-color);
+  }
+}

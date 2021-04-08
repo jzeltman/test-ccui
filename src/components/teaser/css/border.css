@@ -1,0 +1,17 @@
+@layer components {
+  .teaser.teaser\:border {
+    .cmp-teaser {
+      @apply border border-opacity-50 border-secondary;
+    }
+  }
+  .teaser.teaser\:image-border {
+    .cmp-teaser__image {
+      @apply border border-opacity-50 border-secondary;
+    }
+  }
+  .teaser.teaser\:content-border {
+    .cmp-teaser__content {
+      @apply border border-opacity-50 border-secondary;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@layer base {
+  .cmp-teaser {
+    @apply flex;
+    background-color: var(--background-color);
+    color: var(--color);
+    flex-direction: var(--flex-direction);
+  }
+  .cmp-teaser__image {}
+  .cmp-teaser__content {
+    @apply flex flex-col;
+    justify-content: var(--justify-content, 'flex-start');
+  }
+  .cmp-teaser__pretitle {}
+  .cmp-teaser__title {}
+  .cmp-teaser__title-link {
+    color: var(--color);
+    /* &:hover { color: var(--color-inverted-hover); } */
+  }
+  .cmp-teaser__description {}
+  .cmp-teaser__action-container {
+    @apply flex;
+  }
+  .cmp-teaser__action-link {}
+}

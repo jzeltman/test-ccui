@@ -1,0 +1,28 @@
+@layer base {
+  .search {}
+
+  .cmp-search__input { 
+    @apply px-8; 
+    background-color: var(--background-color);
+    border-color: var(--color);
+    color: var(--color);
+    border-radius: var(--border-radius);
+  }
+  .cmp-search__input:hover, .cmp-search__input:focus { 
+    background-color: var(--hover-background-color);
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+  }
+
+  .cmp-search__results[role=listbox] { 
+    @apply divide-y-2 divide-secondary divide-opacity-50 mt-[-1px]; 
+    border-color: var(--color);
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+  }
+  .cmp-search__item { 
+    @apply p-3; 
+    @apply hover:bg-light;
+  }
+  .cmp-search__item.cmp-search__item--is-focused { @apply bg-light; }
+}

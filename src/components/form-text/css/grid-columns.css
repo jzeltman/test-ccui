@@ -1,0 +1,12 @@
+@layer components {
+  .container.form\:grid .cmp-form.aem-Grid:before,
+  .container.form\:grid .cmp-form.aem-Grid:after {
+    content: none;
+  }
+  
+  @tailwindloop form-text-grid-cols {
+    @themeSetting gridTemplateColumns;
+    @allow 1, 2, 3, 4;
+    @selector .form-text--grid-cols;
+  }
+}
