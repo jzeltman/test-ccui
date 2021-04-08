@@ -63,9 +63,9 @@ module.exports = {
         'inverted-hover': 'rgb(235,235,235)',
       },
       light: {
-        DEFAULT: colors.gray['100'],
+        DEFAULT: colors.gray['200'],
         inverted: 'rgb(30,30,30)',
-        hover: colors.gray['200'],
+        hover: colors.gray['300'],
         'inverted-hover': 'rgb(10,10,10)',
       },
       dark: {
@@ -81,7 +81,7 @@ module.exports = {
         'inverted-hover': 'rgb(235,235,235)',
       },
       white: {
-        DEFAULT: 'white',
+        DEFAULT: 'rgb(235,235,235)',
         inverted: 'rgb(30,30,30)',
         hover: 'rgb(255,255,255)',
         'inverted-hover': 'rgb(10,10,10)',
